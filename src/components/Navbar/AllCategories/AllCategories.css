@@ -1,0 +1,140 @@
+.all-categories-container{
+    position: relative;
+}
+.all-categories{
+    width: 211px;
+    height: 50px;
+    background-color: #2BBEF9;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.all-categories h5{
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.category-menu-icon{
+    color: white;
+}
+.category-down-arrow-icon{
+    color: white;
+    font-size: 20px;
+}
+.all-categories > div{
+    background-color: #EDEEF5;
+    width: 127px;
+    font-size: 9.5px;
+    position: absolute;
+    left: 40px;
+    bottom: -5px;
+    text-transform: uppercase;
+    padding: 1px 0px;
+    border-radius: 999px;
+    color: rgb(126, 126, 126);
+    text-align: center;
+}
+
+/* CATEGORIES MENU STYLE */
+.categories-menu{
+    width: 269px;
+    height: 529px;
+    background-color: white;
+    border: 1px solid #e3e4e6;
+    border-top: none;
+    position: absolute;
+    top: 65px;
+    transition: 0.3s ease-in-out;
+}
+.categories-menu.active{
+    height: 0;
+    top: 65px;
+    border-bottom: white;
+}
+.categories-menu-container {
+    border-bottom:  1px solid #e3e4e6;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.categories-menu-container.active{
+    visibility: hidden;
+}
+.categories-nav-link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: 0.3s ease-in-out;
+}
+.categories-nav-link.active{
+    visibility: hidden;
+}
+.categories-nav-link:hover span{
+    color: #2BBEF9;
+}
+.categories-nav-link img{
+    width: 30px;
+}
+.categories-nav-link span{
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+    margin-left: 10px;
+}
+.categories-icon{
+    width: 30px;
+    font-size: 20px;
+    color: rgb(134, 134, 134);
+}
+.meat-icon{
+    width: 30px;
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+}
+.milk-icon{
+    width: 30px;
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+}
+.coffee-icon{
+    width: 30px;
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+}
+.bread-icon{
+    width: 30px;
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+}
+.other-categories-link{
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.other-categories-link.active{
+    visibility: hidden;
+}
+.other-categories-link p{
+    color: rgb(126, 126, 126);
+    margin: 0;
+    font-size: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* USING MEDIA QUERY FOR RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .all-categories{
+        width: 100%;
+        border-radius: 7px;
+    }
+    .all-categories div{
+        display: none;
+    }
+    .categories-menu{
+        width: 100%;
+    }
+}
