@@ -3,10 +3,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineSafety } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { VscAccount } from "react-icons/vsc";
-import Cart from './Cart/Cart';
-import MainNavbar from './MainNavbar/MainNavbar';
-import SelectLocation from './SelectLocation/SelectLocation';
-import AllCategories from './AllCategories/AllCategories';
+import Cart from '../Cart/Cart';
+import MainNavbar from '../MainNavbar/MainNavbar';
+import SelectLocation from '../SelectLocation/SelectLocation';
+import AllCategories from '../AllCategories/AllCategories';
 import './Navbar.css';
 
 const Navbar = () => {

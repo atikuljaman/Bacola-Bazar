@@ -1,0 +1,103 @@
+.banner-section{
+    margin-left: 257px;
+    padding: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    height: 528px;
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+.banner-content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.offer-content{
+    color: #333;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.offer-content span{
+    background-color: #C4E7D8;
+    color: #38a86e;
+    padding: 7px 20px;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 999px;
+}
+.banner-heading{
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-sub-heading{
+    color: #333;
+}
+.banner-price{
+    color: #333;
+}
+.banner-price span{
+    color: #D51243;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3px;
+}
+.banner-shop-btn{
+    background-color: #2BBEF9;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 999px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.banner-arrow-icon{
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+/* USING MEDIA QUERY FOR RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .banner-section{
+        margin-left: 0px;
+        padding: 0;
+    }
+    .banner-img{
+        height: 40vh;
+    }
+    .banner-content{
+        padding-left: 15px;
+        padding-right: 3px;
+        width: 58%;
+    }
+    .offer-content span{
+        padding: 7px 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .banner-heading{
+        font-size: 24px;
+    }
+    .banner-price span{
+        font-size: 24px;
+    }
+    .banner-shop-btn{
+        margin-top: 0px;
+    }
+
+}
